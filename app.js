@@ -1,5 +1,9 @@
 var number = function (busStops) {
-    // Good Luck!
+    let myAns = 0;
+    for (var i = 0; i < busStops.length; i++) {
+        myAns = myAns + (busStops[i][0] - busStops[i][1])
+    }
+    return myAns;
 }
 
 console.log(number([[10, 0], [3, 5], [5, 8]])); // 5
